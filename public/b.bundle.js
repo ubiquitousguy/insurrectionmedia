@@ -21609,25 +21609,32 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 "use strict";
 'use strict';
 
-var React = __webpack_require__(87);
-var ReactDOM = __webpack_require__(86);
+var _react = __webpack_require__(87);
 
-var Hi = React.createClass({
-	displayName: 'Hi',
-	render: function render() {
-		return React.createElement(
-			'div',
-			null,
-			React.createElement(
-				'h1',
-				null,
-				'yo'
-			)
-		);
-	}
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(86);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Hi = _react2.default.createClass({
+  displayName: 'Hi',
+  render: function render() {
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'h1',
+        null,
+        'yo'
+      )
+    );
+  }
 });
 
-ReactDOM.render(React.createElement(Hi, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(Hi, null), document.getElementById('app'));
 
 /***/ }
 /******/ ]);
