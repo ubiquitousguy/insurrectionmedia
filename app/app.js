@@ -1,7 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import '../public/css/normalize.css'
+import '../public/css/style.css'
+// note - semi-colons no longer recommended for JSX
+// pulls the render function out of react-dom only- we don't need anything else.
+// we no longer need ReactDOM.render, we just call render
 
-var App = React.createClass({
+const App = React.createClass({
   render () {
     return (
       <div>
@@ -11,7 +16,4 @@ var App = React.createClass({
   }
 })
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-)
+render(<App />, document.getElementById('app'))

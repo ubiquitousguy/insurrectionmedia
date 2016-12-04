@@ -3,14 +3,14 @@ const path = require('path')
 module.exports = {
   context: __dirname,
   entry: {
-	a: './app/app.js',
-	b: './app/components/child.js'  
+    a: './app/app.js',
+    b: './app/components/child.js'  
   },
 
   devtool: 'cheap-module-source-map',
   output: {
-    path: path.join(__dirname, '/public'),
-    publicPath: '/public/',
+    path: path.join(__dirname, '/public/bundle'),
+    publicPath: '/public/bundle',
     filename: "[name].bundle.js"
   },
   resolve: {
@@ -26,7 +26,7 @@ module.exports = {
     chunks: false
   },
   devServer: {
-    publicPath: '/public/',
+    publicPath: '/public/bundle',
     historyApiFallback: true
   },
   module: {

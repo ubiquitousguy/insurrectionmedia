@@ -1,17 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import '../../public/css/normalize.css'
+import '../../public/css/style.css'
 
-var Hi = React.createClass({
+const Hi = React.createClass({
   render () {
     return (
       <div>
-        <h1>yo</h1>
+        <h1>Hella</h1>
       </div>
     )
   }
 })
 
-ReactDOM.render(
-  <Hi />,
-  document.getElementById('app')
-)
+render(<Hi />, document.getElementById('app'))
