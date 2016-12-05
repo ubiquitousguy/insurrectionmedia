@@ -1,0 +1,42 @@
+cool es6 stuff
+
+equivalent of #each in HBS = 
+
+  shows.map((show) => {
+        return (
+          <ShowCard key={show.imdb} show={...show} />
+        )
+    })
+
+{...show} is jsx for show.title show.description
+
+// in another component file 
+
+const ShowCard = React.createClass({
+  render () {
+    const { poster, title, year, description } = this.props.shows
+    return (
+      <div className='show-card'>
+        <img src={`/public/img/posters/${poster}`} />
+        <div>
+          <h3>{title}</h3>
+          <h4>{year}</h4>
+          <p>{description}</p>
+        </div>
+      </div>
+    )
+  }
+})
+
+exploding variables out 
+instead of this.props.poster this.props.title etc...
+const { poster, title } = this.props.show 
+does the same thing, so then you can just write {poster} {title}
+
+   es6 allows you to not have to concatenate strings
+   by using back ticks and dollar signs
+
+   example <img src={`/public/img/posters/${show.poster}`}
+   instead of <img src={'/public/img/posters/' + '"{show.poster}"'}
+
+

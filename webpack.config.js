@@ -4,15 +4,16 @@ module.exports = {
   context: __dirname,
   entry: {
     a: './app/app.js',
-    b: './app/components/child.js'  
+    b: './app/components/child.js'
   },
 
   devtool: 'cheap-module-source-map',
   output: {
     path: path.join(__dirname, '/public/bundle'),
-    publicPath: '/public/bundle',
-    filename: "[name].bundle.js"
+    publicPath: '/public/',
+    filename: '[name].bundle.js'
   },
+
   resolve: {
     // alias: {
     //   react: 'preact-compat',
@@ -26,15 +27,15 @@ module.exports = {
     chunks: false
   },
   devServer: {
-    publicPath: '/public/bundle',
+    publicPath: '/public/',
     historyApiFallback: true
   },
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.js$/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         exclude: /node_modules/
       },
       {
@@ -54,7 +55,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-            presets: ['es2015']
+          presets: ['es2015']
         }
       },
       {
