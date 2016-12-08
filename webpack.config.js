@@ -2,11 +2,7 @@ const path = require('path')
 
 module.exports = {
   context: __dirname,
-  entry: {
-    a: './app/app.js',
-    b: './app/components/child.js'
-  },
-
+  entry: './app/App.js',
   devtool: 'cheap-module-source-map',
   output: {
     path: path.join(__dirname, '/public/bundle'),
