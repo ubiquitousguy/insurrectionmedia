@@ -24,4 +24,4 @@ const App = React.createClass({
   }
 })
 
-export default App
+render(<App />, document.getElementById('app'))

@@ -34,7 +34,7 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));
 server.use(bodyParser.text());
 server.use(bodyParser.json({type:'application/vnd.api+json'}));
-
+// server side rendering -  doesn't work yet
 server.use((req, res) => {
   const context = ReactRouter.createServerRenderContext()
   let body = ReactDOMServer.renderToString(
