@@ -5,7 +5,7 @@ module.exports = {
   entry: './app/App.js',
   devtool: 'cheap-module-source-map',
   output: {
-    path: path.join(__dirname, '/public/bundle'),
+    path: path.join(__dirname, '/public/'),
     publicPath: '/public/',
     filename: '[name].bundle.js'
   },
@@ -61,3 +61,4 @@ module.exports = {
     ]
   }
 }
+

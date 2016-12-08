@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+// server started with: npm start
 // pulls the render function out of react-dom only
 // we no longer need ReactDOM.render, we just call render
 import { BrowserRouter, Match, Miss } from 'react-router'
@@ -10,7 +11,6 @@ import FourOhFour from './components/fourohfour'
 // for people annoyed by es-linting, you can have it automatically fix errors for you
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX
-
 const App = React.createClass({
   render () {
     return (
@@ -23,7 +23,5 @@ const App = React.createClass({
     )
   }
 })
-
-render(<App />, document.getElementById('app'))
 
 export default App

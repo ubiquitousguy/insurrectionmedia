@@ -1,5 +1,5 @@
 require('babel-register')
-
+// server started with: npm start
 const express = require('express')
 const React = require('react')
 const ReactDOMServer = require('react-dom/server')
@@ -18,6 +18,7 @@ const logger = require('morgan');
 // db setup
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/insurrection');
+const db = mongoose.connection;
 
 db.on('error', function (err) {
   console.log('Mongoose Error: ', err);
@@ -27,7 +28,7 @@ db.once('open', function () {
   console.log('Mongoose connection successful.');
 });
 
-server.use('/public', express.static('./public'))
+// server.use('/public', express.static('./public'))
 server.use(logger('dev'));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));

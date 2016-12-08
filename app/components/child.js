@@ -1,8 +1,6 @@
 import React from 'react'
-import '../../public/css/normalize.css'
-import '../../public/css/style.css'
 
-const Child = React.createClass({
+class Child extends React.Component {
   render () {
     return (
       <div>
@@ -10,6 +8,6 @@ const Child = React.createClass({
       </div>
     )
   }
-})
+}
 
 export default Child

@@ -59,7 +59,7 @@
     "watch": "webpack --watch",
     "test": "NODE_ENV=test jest",
     "update-test": "npm run test -- -u",
-    "start": "node server.js",
+    "start": "NODE_ENV=server node server.js",
     "cover": "npm run test -- --coverage"
   }
 }
