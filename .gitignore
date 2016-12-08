@@ -4,6 +4,8 @@ DS
 config
 
 bundle
+main.bundle.js
+main.bundle.js.map
 a.bundle.js
 a.bundle.js.map
 b.bundle.js

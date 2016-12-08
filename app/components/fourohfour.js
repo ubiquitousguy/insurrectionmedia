@@ -2,12 +2,12 @@
 
 import React from 'react'
 
-const FourOhFour = React.createClass({
+class FourOhFour extends React.Component {
   render () {
     <div>
       <h1>Page Not Found!</h1>
     </div>
   }
-})
+}
 
 export default FourOhFour
