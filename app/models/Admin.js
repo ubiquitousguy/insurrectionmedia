@@ -25,12 +25,8 @@ var Admin = new Schema({
   password: {
     type: String,
     required: "Password is required"
-  },
-
-  address: {
-    type: String,
-    required: "Address is required"
   }
+  
 })
 
 // This creates our model from the above schema, using mongoose's model method.
