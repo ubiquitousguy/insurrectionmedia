@@ -2,14 +2,14 @@
 
 import React from 'react'
 
-class FourOhFour extends React.Component {
+const Press = React.createClass({
   render () {
     return (
       <div>
-        <h1>Page Not Found!</h1>
+        <h1>Press</h1>
       </div>
     )
   }
-}
+})
 
-export default FourOhFour
+export default Press

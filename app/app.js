@@ -4,7 +4,7 @@ import { Match, Miss } from 'react-router'
 // server started with: npm start
 // pulls the render function out of react-dom only
 // we no longer need ReactDOM.render, we just call render
-import Child from './components/child'
+import Main from './components/Main'
 import FourOhFour from './components/fourohfour'
 import Admin from './components/Admin'
 // for people annoyed by es-linting, you can have it automatically fix errors for you
@@ -13,7 +13,7 @@ import Admin from './components/Admin'
 const App = () => {
   return (
     <div className='app'>
-      <Match exactly pattern='/' component={Child} />
+      <Match exactly pattern='/' component={Main} />
       <Match pattern='/admin' component={Admin} />
       <Miss component={FourOhFour} />
     </div>

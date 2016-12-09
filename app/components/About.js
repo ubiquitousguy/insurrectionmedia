@@ -1,13 +1,13 @@
 import React from 'react'
 
-class Child extends React.Component {
+const About =  React.createClass({
   render () {
     return (
       <div>
-        <h1>Nice</h1>
+        <h1>About</h1>
       </div>
     )
   }
-}
+})
 
-export default Child
+export default About
