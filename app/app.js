@@ -1,9 +1,9 @@
 import React from 'react'
+import { Match, Miss } from 'react-router'
 // import { render } from 'react-dom'
 // server started with: npm start
 // pulls the render function out of react-dom only
 // we no longer need ReactDOM.render, we just call render
-import { BrowserRouter, Match, Miss } from 'react-router'
 
 import Child from './components/child'
 import FourOhFour from './components/fourohfour'
@@ -13,13 +13,11 @@ import FourOhFour from './components/fourohfour'
 // semi-colons not necessary or recommended for JSX
 const App = () => {
   return (
-
-      <div className='app'>
-        <Match exactly pattern='/' component={Child} />
-        <Miss component={FourOhFour} />
-      </div>
-
-  ) 
+    <div className='app'>
+      <Match exactly pattern='/' component={Child} />
+      <Miss component={FourOhFour} />
+    </div>
+  )
 }
 
 export default App
