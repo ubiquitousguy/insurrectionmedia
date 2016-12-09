@@ -2,7 +2,7 @@ DS_Stores
 node_modules
 DS
 config
-
+npm-debug.log
 bundle
 main.bundle.js
 main.bundle.js.map
