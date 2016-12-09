@@ -4,10 +4,8 @@ import { Match, Miss } from 'react-router'
 // server started with: npm start
 // pulls the render function out of react-dom only
 // we no longer need ReactDOM.render, we just call render
-
 import Child from './components/child'
 import FourOhFour from './components/fourohfour'
-
 // for people annoyed by es-linting, you can have it automatically fix errors for you
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX

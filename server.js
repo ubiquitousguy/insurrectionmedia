@@ -13,27 +13,27 @@ const template = _.template(baseTemplate)
 const App = require('./app/App.js').default
 const server = express()
 // class components
-const bodyParser = require('body-parser');
-const logger = require('morgan');
+const bodyParser = require('body-parser')
+const logger = require('morgan')
 // db setup
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/insurrection');
-const db = mongoose.connection;
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost/insurrection')
+const db = mongoose.connection
 
 db.on('error', function (err) {
-  console.log('Mongoose Error: ', err);
-});
+  console.log('Mongoose Error: ', err)
+})
 
 db.once('open', function () {
-  console.log('Mongoose connection successful.');
-});
+  console.log('Mongoose connection successful.')
+})
 
 server.use('/public', express.static('./public'))
-server.use(logger('dev'));
-server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({extended: true}));
-server.use(bodyParser.text());
-server.use(bodyParser.json({type:'application/vnd.api+json'}));
+server.use(logger('dev'))
+server.use(bodyParser.json())
+server.use(bodyParser.urlencoded({extended: true}))
+server.use(bodyParser.text())
+server.use(bodyParser.json({type: 'application/vnd.api+json'}))
 // server side rendering -  doesn't work yet
 server.use((req, res) => {
   const context = ReactRouter.createServerRenderContext()
