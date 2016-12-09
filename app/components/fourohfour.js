@@ -4,9 +4,11 @@ import React from 'react'
 
 class FourOhFour extends React.Component {
   render () {
-    <div>
-      <h1>Page Not Found!</h1>
-    </div>
+    return (
+      <div>
+        <h1>Page Not Found!</h1>
+      </div>
+    )
   }
 }
 
