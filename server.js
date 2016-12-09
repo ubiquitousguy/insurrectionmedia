@@ -28,7 +28,7 @@ db.once('open', function () {
   console.log('Mongoose connection successful.');
 });
 
-// server.use('/public', express.static('./public'))
+server.use('/public', express.static('./public'))
 server.use(logger('dev'));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));
