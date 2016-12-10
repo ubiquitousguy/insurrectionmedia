@@ -29,39 +29,9 @@ const Main = React.createClass({
                 <li className='nav-item'>
                   <a className='nav-link' href='#'>Add Press</a>
                 </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Manage Users</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Add Media</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Add Press</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Manage Users</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Add Media</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Add Press</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Manage Users</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Add Media</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Add Press</a>
-                </li>
               </ul>
-
-
         </div>
       </div>
->>>>>>> naeve
     )
   }
 })
