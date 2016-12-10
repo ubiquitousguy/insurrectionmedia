@@ -8,25 +8,25 @@ var Schema = mongoose.Schema
 // and how to format it in mongoDB
 var Admin = new Schema({
   // string must be a string. We "trim" it to remove any trailing white space.
-  // Notice that it is required, as well. It must be entered 
+  // Notice that it is required, as well. It must be entered
   // or else mongoose will throw an error.
 
   name: {
     type: String,
     trim: true,
-    required: "String is Required"
+    required: 'String is Required'
   },
 
   email: {
     type: String,
-    match: [/.+\@.+\..+/, "Please enter a valid e-mail address"],
+    match: [/.+\@.+\..+/, 'Please enter a valid e-mail address']
   },
 
   password: {
     type: String,
-    required: "Password is required"
+    required: 'Password is required'
   }
-  
+
 })
 
 // This creates our model from the above schema, using mongoose's model method.

@@ -10,4 +10,4 @@ const Contact = React.createClass({
   }
 })
 
-export default Contact 
+export default Contact
