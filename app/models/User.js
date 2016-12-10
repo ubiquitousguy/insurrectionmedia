@@ -6,15 +6,26 @@ var Schema = mongoose.Schema
 // with our new Schema class, we instantiate an ExampleSchema object.
 // This is where we decide how our data must look before we accept it in the server
 // and how to format it in mongoDB
-var Admin = new Schema({
+var User = new Schema({
   // string must be a string. We "trim" it to remove any trailing white space.
   // Notice that it is required, as well. It must be entered
   // or else mongoose will throw an error.
 
-  name: {
+  firstName: {
     type: String,
     trim: true,
     required: 'String is Required'
+  },
+
+  lastName: {
+    type: String,
+    trim: true,
+    required: "String is Required"
+  },
+
+  company: {
+    type: String,
+    trim: true,
   },
 
   email: {
@@ -24,13 +35,17 @@ var Admin = new Schema({
 
   password: {
     type: String,
-    required: 'Password is required'
+    required: "Password is required"
+  },
+  isAdmin: {
+    type: Boolean,
+    default: false
   }
 
 })
 
 // This creates our model from the above schema, using mongoose's model method.
-var Admin = mongoose.model('Admin', AdminSchema)
+var User = mongoose.model('User', UserSchema)
 
 // finally, we export the module, allowing server.js to hook into it with a require statement.
-export default Admin
+export default User

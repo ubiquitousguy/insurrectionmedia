@@ -8,7 +8,7 @@ import React from 'react'
 const Main = React.createClass({
   render () {
     return (
-      <div>
+      <div className="container-fluid">
         <div className='container sidebar'>
           <ul className='nav nav-pills nav-stacked'>
             <li className='nav-item'>
