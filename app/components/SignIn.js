@@ -5,8 +5,8 @@ const SignIn = React.createClass({
     return (
       <div className='flexy'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-xs-4 flexcontainer'>
+          <div className='row loginrow'>
+            <div className='col-xs-4 logincolumn'>
                 <form>
                   <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>

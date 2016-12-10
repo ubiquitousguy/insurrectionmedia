@@ -6,7 +6,7 @@ const Press = React.createClass({
   render () {
     return (
       <div>
-        <h1>Press</h1>
+        <h1>Press Main Component</h1>
       </div>
     )
   }

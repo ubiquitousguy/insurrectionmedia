@@ -7,7 +7,8 @@ import { Match, Miss } from 'react-router'
 import Main from './components/Main'
 import fourohfour from './components/fourohfour'
 import Admin from './components/Admin'
-import About from './components/About'
+
+import SignIn from './components/SignIn'
 // for people annoyed by es-linting, you can have it automatically fix errors for you
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX
@@ -17,6 +18,7 @@ const App = () => {
       <Match exactly pattern='/' component={Main} />
       <Match exactly pattern='/about' component={About} />
       <Match pattern='/admin' component={Admin} />
+      <Match pattern='/signin' component={SignIn} />
       <Miss component={fourohfour} />
     </div>
   )
