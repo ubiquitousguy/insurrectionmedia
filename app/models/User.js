@@ -10,7 +10,6 @@ var User = new Schema({
   // string must be a string. We "trim" it to remove any trailing white space.
   // Notice that it is required, as well. It must be entered
   // or else mongoose will throw an error.
-
   firstName: {
     type: String,
     trim: true,
@@ -37,6 +36,7 @@ var User = new Schema({
     type: String,
     required: 'Password is required'
   },
+
   isAdmin: {
     type: Boolean,
     default: false
