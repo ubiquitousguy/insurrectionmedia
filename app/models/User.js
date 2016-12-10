@@ -20,12 +20,12 @@ var User = new Schema({
   lastName: {
     type: String,
     trim: true,
-    required: "String is Required"
+    required: 'String is Required'
   },
 
   company: {
     type: String,
-    trim: true,
+    trim: true
   },
 
   email: {
@@ -35,7 +35,7 @@ var User = new Schema({
 
   password: {
     type: String,
-    required: "Password is required"
+    required: 'Password is required'
   },
   isAdmin: {
     type: Boolean,
