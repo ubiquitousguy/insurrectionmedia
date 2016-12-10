@@ -61,7 +61,6 @@ const Main = React.createClass({
 
         </div>
       </div>
->>>>>>> naeve
     )
   }
 })
