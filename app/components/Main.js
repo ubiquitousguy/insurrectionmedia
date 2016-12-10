@@ -17,9 +17,7 @@ const Main = React.createClass({
       //     <MenuItem><a>Login</a></MenuItem>
       //   </Menu>
       // </div>
-      <div>
-        <h1>Main Page</h1>
-      </div>
+      <div>hi</div>
     )
   }
 })
