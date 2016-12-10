@@ -20,9 +20,9 @@ const Main = React.createClass({
               <span className='logo-small'><img src='assetswe/logo-small.png' alt='' /></span>
               <span className='to-top'><i className='fa fa-arrow-up' /></span>
 
-            INSURRECTION MEDIA
+              INSURRECTION MEDIA
 
-            <img className='site-logo' src='assets/logo.png' alt='logo' />
+              <img className='site-logo' src='assets/logo.png' alt='logo' />
             </a>
 
           </div>
@@ -51,7 +51,6 @@ const Main = React.createClass({
           </div>
 
         </div>
-
       </div>
 
     )
