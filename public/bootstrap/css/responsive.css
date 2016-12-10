@@ -1,0 +1,93 @@
+
+
+
+
+@media (max-width: 544px) { 
+    .pics {
+        width: 80px;
+        height: 80px;
+    }
+    .tech {
+        min-height: 60vh;        
+    }
+    h3 {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .nav a {
+        margin-left: 0px;
+        line-height: 10px;
+
+    }
+    a.nav-link {
+       font-size: 1em; 
+
+    }
+
+    .mainstage { 
+    background-image: url("../img/red.jpeg");
+    height: 500px; 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .name {
+        text-align: center;
+    }
+    .smallflex {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .social {
+        height: 80px;
+        width: 80px;
+    }
+    .black {
+        color: black;
+        padding-top: 80px;
+        font-size: 20px;
+    }
+    .contactflex {  
+        min-height: 30vh;
+
+    }
+
+    .footer {
+        height: 100px;
+    }
+    .about {
+
+        padding-top: 10px;
+    }
+    .profilez {    
+        height: 100px;
+        width: 100px; 
+    }
+    .nav {
+        display: none;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) { 
+
+
+ }
+
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+}
