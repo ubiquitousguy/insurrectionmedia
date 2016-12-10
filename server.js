@@ -10,7 +10,7 @@ const fs = require('fs')
 const port = 3000
 const baseTemplate = fs.readFileSync('./index.html')
 const template = _.template(baseTemplate)
-const App = require('./app/App.js').default
+const App = require('./app/app.js').default
 const server = express()
 // class components
 const bodyParser = require('body-parser')
