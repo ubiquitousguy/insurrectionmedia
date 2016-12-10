@@ -1,0 +1,13 @@
+import React from 'react'
+
+const Partners_Distr = React.createClass({
+  render () {
+    return (
+      <div>
+        <h1>Partners_Distr Component</h1>
+      </div>
+    )
+  }
+})
+
+export default Partners_Distr
