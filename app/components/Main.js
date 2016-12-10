@@ -9,71 +9,37 @@ import { Link } from 'react-router'
 const Main = React.createClass({
   render () {
     return (
-<<<<<<< HEAD
+
       <div>
-        <h1>hi hello</h1>
-        <Link to ="/about">Click for About</Link>
-
-=======
-      <div id="main-nav" className="navbar navbar-fixed-top">
-  			<div className="container">
-
-  				<div className="navbar-header">
-
-  					<button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
-  						<span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span>
-  					</button>
-
-  					<a className="navbar-brand scrollto" href="#home">
-  						<span className="logo-small"><img src="assets/logo-small.png" alt=""/></span>
-  						<span className="to-top"><i className="fa fa-arrow-up"></i></span>
-
-  						Qubico
-
-
-  						{/* <img className="site-logo" src="assets/logo.png" alt="logo" /> */}
-  					</a>
-
-  				</div>
-          <div id="site-nav" className="navbar-collapse collapse">
-            <ul className="nav navbar-nav navbar-right">
-              <li className="sr-only">
-                <a href="#home" className="scrollto">Home</a>
+        <nav className="navbar navbar-light bg-faded">
+          <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div className="collapse navbar-toggleable-md" id="navbarResponsive">
+            <a className="navbar-brand" href="#">Navbar</a>
+            <ul className="nav navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
               </li>
-              <li>
-                <a href="#about" className="scrollto">About</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Link</a>
               </li>
-              <li>
-                <a href="#services" className="scrollto">Services</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Link</a>
               </li>
-              <li>
-                <a href="#team" className="scrollto">Team</a>
-              </li>
-              <li>
-                <a href="#portfolio" className="scrollto">Portfolio</a>
-              </li>
-              <li>
-                <a href="#pricing" className="scrollto">Prices</a>
-              </li>
-              <li className="">
-                <a href="#news" className="scrollto">News</a>
-              </li>
-              <li>
-                <a href="#contact" className="scrollto">Contact</a>
-              </li>
-              <li className="submenu ">
-                <a href="blog/blog.html">Blog</a>
-                <ul>
-                  <li><a href="blog/blog-ajax.html">Ajax Blog</a></li>
-                  <li><a href="blog/blog.html">Standard Blog</a></li>
-                  <li><a href="blog/following-the-train.html">Single Blog Post</a></li>
-                </ul>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div className="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                  <a className="dropdown-item" href="#">Action</a>
+                  <a className="dropdown-item" href="#">Another action</a>
+                  <a className="dropdown-item" href="#">Something else here</a>
+                </div>
               </li>
             </ul>
+            <form className="form-inline float-lg-right">
+              <input className="form-control" type="text" placeholder="Search" />
+                <button className="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
-
-        </div>
->>>>>>> b7259ef3e5dbc15779ce09f6157bd5c6c91a393c
+        </nav>
       </div>
 
     )
