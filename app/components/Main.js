@@ -33,8 +33,8 @@ const Main = React.createClass({
               </li>
             </ul>
             <form className="form-inline float-lg-right">
-              <input className="form-control" type="text" placeholder="Search" />
-                <button className="btn btn-outline-success" type="submit">Search</button>
+              <input className="form-control" type="text" placeholder="User Name" />
+              <button className="btn btn-outline-success" type="submit">Login</button>
             </form>
           </div>
         </nav>
