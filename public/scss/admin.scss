@@ -1,11 +1,19 @@
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #000;
 
-body {
-  background-color: $primary-color;
+html, body, .container-fluid {
+    height:100%;
 }
 
-h1 {
-  color: green;
+.sidebar {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  background-color: lightskyblue;
+  border: 1px solid black;
+}
+
+ul li {
+  flex: 1;
 }

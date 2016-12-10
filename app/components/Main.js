@@ -18,7 +18,48 @@ const Main = React.createClass({
       //   </Menu>
       // </div>
       <div>
-        <h1>Main Page</h1>
+        <div className='container sidebar'>
+              <ul className='nav nav-pills nav-stacked'>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Manage Users</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Media</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Press</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Manage Users</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Media</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Press</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Manage Users</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Media</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Press</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Manage Users</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Media</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Add Press</a>
+                </li>
+              </ul>
+
+
+        </div>
       </div>
     )
   }
