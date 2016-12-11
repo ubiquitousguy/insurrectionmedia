@@ -1,17 +1,17 @@
+
 import React from 'react'
 
-const Partners = React.createClass({
+const Sizzle = React.createClass({
   render (props) {
     const containerPlacer = {
       background: "yellow"
     }
     return (
       <div className="row" style={containerPlacer}>
-      
-        <h1>Partners Main Component</h1>
+        <h1>Sizzle Main Component</h1>
       </div>
     )
   }
 })
 
-export default Partners
+export default Sizzle
