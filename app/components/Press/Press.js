@@ -4,8 +4,11 @@ import React from 'react'
 
 const Press = React.createClass({
   render () {
+    const containerPlacer = {
+      background: "red"
+    }
     return (
-      <div>
+      <div className="row" style={containerPlacer}>
         <h1>Press Main Component</h1>
       </div>
     )

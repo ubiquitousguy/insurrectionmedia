@@ -17,6 +17,7 @@ import Auth from './components/Auth'
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX
 const App = () => {
+
   return (
     <div className='app'>
       <Match exactly pattern='/' component={Main} />
