@@ -9,9 +9,6 @@ import Home from './Home'
 const Main = React.createClass({
 
   render () {
-    const containerPlacer = {
-      background: "pink"
-    }
     return (
       <div className="container-fluid">
         <nav className="navbar navbar-light bg-faded">
@@ -45,7 +42,8 @@ const Main = React.createClass({
           </div>
         </nav>
         <div>
-          <Home/>
+          <Home />
+          {/* {props.children} */}
         </div>
       </div>
 
