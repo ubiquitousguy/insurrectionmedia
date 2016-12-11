@@ -6,13 +6,14 @@ import Home from './Home'
 
 // Import sub-components
 import About from './About/About'
-// import Partners from './Partners'
-// import Press from './Press'
-// import Contact from './Contact'
+import Partners from './Partners/Partners'
+import Press from './Press/Press'
+import Contact from './Contact/Contact'
+import Sizzle from './Sizzle/Sizzle'
 
 const Main = React.createClass({
 
-  render () {
+  render (props) {
     const containerPlacer = {
       background: "pink"
     }
@@ -34,13 +35,13 @@ const Main = React.createClass({
                 <Link to='/partners' className="nav-link">Partners</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Media Press</a>
+                <Link to='/press' className="nav-link">Media Press</Link> 
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <Link to='/contact' className="nav-link">Contact</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Sizzles</a>
+                <Link to='/sizzle' className="nav-link">Sizzles</Link>
               </li>
             </ul>
             <form className="form-inline float-lg-right">
@@ -49,8 +50,9 @@ const Main = React.createClass({
             </form>
           </div>
         </nav>
+
         <div>
-          <Home/>
+          {this.props.children}
         </div>
       </div>
 
