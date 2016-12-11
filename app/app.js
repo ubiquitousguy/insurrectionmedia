@@ -9,6 +9,7 @@ import fourohfour from './components/fourohfour'
 import Admin from './components/Admin'
 
 import About from './components/About/About'
+import Partners from './components/Partners/Partners'
 import SignIn from './components/SignIn'
 import Auth from './components/Auth'
 
@@ -20,6 +21,7 @@ const App = () => {
     <div className='app'>
       <Match exactly pattern='/' component={Main} />
       <Match exactly pattern='/about' component={About} />
+      <Match exactly pattern='/partners' component={Partners} />
       <Match pattern='/admin' component={Admin} />
       <Miss component={fourohfour} />
     </div>
