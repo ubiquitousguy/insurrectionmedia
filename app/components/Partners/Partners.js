@@ -2,8 +2,11 @@ import React from 'react'
 
 const Partners = React.createClass({
   render () {
+    const containerPlacer = {
+      background: "yello"
+    }
     return (
-      <div>
+      <div className="row" style={containerPlacer}>
         <h1>Partners Main Component</h1>
       </div>
     )
