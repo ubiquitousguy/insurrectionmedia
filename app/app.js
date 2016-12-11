@@ -1,26 +1,22 @@
 import React from 'react'
 import { Match, Miss } from 'react-router'
-// import { render } from 'react-dom'
-// server started with: npm start
-// pulls the render function out of react-dom only
-// we no longer need ReactDOM.render, we just call render
 import Main from './components/Main'
 import fourohfour from './components/fourohfour'
 import Admin from './components/Admin'
-import SignIn from './components/SignIn'
-import Auth from './components/Auth'
-// for people annoyed by es-linting, you can have it automatically fix errors for you
-// just run: npm run lint -s -- --fix
-// semi-colons not necessary or recommended for JSX
-const App = () => {
+import SignIn from './components/Auth/SignIn'
+import AddUser from './components/Auth/AddUser'
+import Auth from './components/Auth/Auth'
+
+const app = () => {
   return (
     <div className='app'>
       <Match exactly pattern='/' component={Main} />
       <Match pattern='/admin' component={Admin} />
       <Match pattern='/signin' component={SignIn} />
+      <Match pattern='/adduser' component={AddUser} />
       <Miss component={fourohfour} />
     </div>
   )
 }
 
-export default App
+export default app
