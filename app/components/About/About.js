@@ -1,5 +1,4 @@
 import React from 'react'
-import Main from './Main'
 
 const About = React.createClass({
   render () {

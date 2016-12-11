@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Link } from 'react-router'
+import Link from 'react-router/Link'
 
 import Home from './Home'
 
 // Import sub-components
-// import About from './About'
+import About from './About/About'
 // import Partners from './Partners'
 // import Press from './Press'
 // import Contact from './Contact'
@@ -21,7 +21,7 @@ const Main = React.createClass({
         <nav className="navbar navbar-light bg-faded">
           <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
           <div className="collapse navbar-toggleable-md" id="navbarResponsive">
-            <a className="navbar-brand" href="#">Navbar</a>
+            <Link to='/about'><a className="navbar-brand" href="#">Navbar</a></Link>
             <ul className="nav navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
