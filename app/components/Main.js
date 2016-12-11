@@ -44,7 +44,7 @@ const Main = React.createClass({
             </form>
           </div>
         </nav>
-        <div className="row" style={containerPlacer}>
+        <div>
           <Home/>
         </div>
       </div>
