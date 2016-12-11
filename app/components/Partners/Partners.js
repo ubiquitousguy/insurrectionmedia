@@ -7,7 +7,7 @@ const Partners = React.createClass({
     }
     return (
       <div className="row" style={containerPlacer}>
-      
+        
         <h1>Partners Main Component</h1>
       </div>
     )

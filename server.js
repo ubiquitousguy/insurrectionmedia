@@ -44,7 +44,7 @@ server.use(bodyParser.json({type: 'application/vnd.api+json'}))
 // server.use(express.session({ secret: 'SECRET' }));
 server.use(passport.initialize());
 // server.use(passport.session());
-// server side rendering 
+// server side rendering
 server.use((req, res) => {
   const context = ReactRouter.createServerRenderContext()
   let body = ReactDOMServer.renderToString(
