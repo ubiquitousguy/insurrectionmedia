@@ -7,7 +7,7 @@ const SignIn = React.createClass({
         <div className='container'>
           <div className='row loginrow'>
             <div className='col-xs-4 logincolumn'>
-                <form>
+                <form action='/login/check' method='POST'>
                   <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -15,12 +15,12 @@ const SignIn = React.createClass({
                   </div>
                   <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" name='password' />
                   </div>
-                  <button type="submit" className="btn btn-primary">Submit</button>
+                  <button type="submit" value='Log In' className="btn btn-primary">Submit</button>
                 </form>
               </div>
-              </div>  
+            </div>  
           </div>
         </div>
     )
