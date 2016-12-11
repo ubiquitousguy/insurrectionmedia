@@ -97,3 +97,4 @@ exports.roleAuthorization = function(role) {
     })
   }
 }
+

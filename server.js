@@ -56,16 +56,5 @@ server.use((req, res) => {
   res.end()
 })
 
-// Passport Authentication
-server.post('/signin/check',
-  passport.authenticate('local', { successRedirect: '/',
-                                   failureRedirect: '/signin',
-                                   failureFlash: true })
-)
-
-// 
-
-
-
 console.log('listening on ' + port)
 server.listen(port)
