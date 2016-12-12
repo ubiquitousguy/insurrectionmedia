@@ -19,11 +19,15 @@
     <!-- ==============================================
     CSS
     =============================================== -->
+
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap-flex.min.css">
+    <link rel="stylesheet" href="/public/css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/login.css">
     <link rel="stylesheet" href="/public/css/admin.css">
     <link rel="stylesheet" href="/public/css/home.css">
-    <link rel="stylesheet" href="/public/css/simple-sidebar.css" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/bootstrap-flex.min.css">
+    
+    
+    
 
     <!-- ==============================================
 		Fonts
@@ -34,11 +38,14 @@
   </head>
 
 	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
-    <div id="app"><%= body %></div>
+   
+        <div id="app"><%= body %></div>
+    
+        <script src="/public/bundle.js"></script>
+        <script src="/public/bootstrap/js/jquery.min.js"></script>
+        <script src="/public/bootstrap/js/tether.min.js"></script>
+        <script src="/public/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="/public/bundle.js"></script>
-    <script src="/public/bootstrap/js/jquery.min.js"></script>
-    <script src="/public/bootstrap/js/tether.min.js"></script>
-    <script src="/public/bootstrap/js/bootstrap.min.js"></script>
+
   </body>
 </html>
