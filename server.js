@@ -12,13 +12,13 @@ const baseTemplate = fs.readFileSync('./index.html')
 const template = _.template(baseTemplate)
 const App = require('./app/app.js').default
 const server = express()
-const cookieParser = require('cookieParser')
+//const cookieParser = require('cookieParser')
 // class components
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 // Passport Setup
-const passport = require("passport");
-const LocalStrategy = require('passport-local').Strategy;
+//const passport = require("passport");
+//const LocalStrategy = require('passport-local').Strategy;
 // db setup
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/insurrection')
@@ -42,7 +42,7 @@ server.use(bodyParser.json({type: 'application/vnd.api+json'}))
 
 // server.use(express.bodyParser());
 // server.use(express.session({ secret: 'SECRET' }));
-server.use(passport.initialize());
+//server.use(passport.initialize());
 // server.use(passport.session());
 // server side rendering
 server.use((req, res) => {
