@@ -5,6 +5,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "axios": "^0.15.3",
+    "bcrypt": "^1.0.1",
     "body-parser": "^1.15.2",
     "cookieparser": "^0.1.0",
     "crypto": "0.0.3",

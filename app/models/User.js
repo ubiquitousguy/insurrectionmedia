@@ -44,6 +44,7 @@ const UserSchema = new Schema({
 })
 
 UserSchema.pre('save', function(next) {  
+  console.log("fuck ya")
   const user = this,
         SALT_FACTOR = 5;
 

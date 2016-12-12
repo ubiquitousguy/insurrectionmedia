@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken'),
       crypto = require('crypto'),
-      User = require('../models/user')
+      User = require('../models/User')
 
 function generateToken(user) {
   return jwt.sign(user, config.secret, {
@@ -28,28 +28,28 @@ exports.login = function(req, res, next) {
 }
 
 exports.register = function (req, res, next) {
-
+  console.log("made it to auth controller")
   const email = req.body.email
   const firstName = req.body.firstName
   const lastName = req.body.lastName
   const password = req.body.password
   const isAdmin = req.body.isAdmin
 
-  if (!email) {
-    return res.status(422).send({ error: 'You must enter an email address.' })
-  }
+  // if (!email) {
+  //   return res.status(422).send({ error: 'You must enter an email address.' })
+  // }
 
-  if (!firstName) {
-    return res.status(422).send({ error: 'You must enter a first name.' })
-  }
+  // if (!firstName) {
+  //   return res.status(422).send({ error: 'You must enter a first name.' })
+  // }
 
-  if (!lastName) {
-    return res.status(422).send({ error: 'You must enter a last name.' })
-  }
+  // if (!lastName) {
+  //   return res.status(422).send({ error: 'You must enter a last name.' })
+  // }
 
-  if (!password) {
-    return res.status(422).send({ error: 'You must enter a password.' })
-  }
+  // if (!password) {
+  //   return res.status(422).send({ error: 'You must enter a password.' })
+  // }
 
   User.findOne({ email: email }, function(err, existingUser) {
     if (err) { return next(err) }

@@ -1,7 +1,16 @@
 import React from 'react'
-const Axios = require('axios')
+const axios = require('axios')
+const { string, bool } = React.PropTypes
 
-const AddUser = React.createClass({
+const Register = React.createClass({
+
+  propTypes: {
+    firstName: string,
+    lastName: string,
+    email: string,
+    password: string,
+    isAdmin: bool
+  },
 
   getInitialState () {
     return {
@@ -18,7 +27,7 @@ const AddUser = React.createClass({
   },
 
   lastNameChange (e) {
-   this.setState ({ firstName: e.target.value })
+   this.setState ({ lastName: e.target.value })
   },
 
   emailChange (e) {
@@ -27,24 +36,45 @@ const AddUser = React.createClass({
 
   passwordChange (e) {
    this.setState ({ password: e.target.value })
+   console.log(e.target.value)
   },
 
   adminChange (e) {
-    const admin = e.target.value ? true : false
+    const admin = this.state.isAdmin = !this.state.isAdmin
     this.setState ({ isAdmin: admin })
   },
 
-  handleSubmit ( firstName, lastName, email, password, isAdmin ) {
-    event.preventDefault()
+  saveSubmit (firstName, lastName, email, password, isAdmin) {
+
     axios.post('/auth/register', { firstName, lastName, email, password, isAdmin })
       .then((response) => {
-        cookie.save('token', response.data.token, { path: '/' })
-        cookie.save('user', response.data.user, { path: '/' })
+        // cookie.save('token', response.data.token, { path: '/' })
+        // cookie.save('user', response.data.user, { path: '/' })
+        // window.location.href = "http://localhost:3000/"
+        console.log('too far')
 
       })
-    
   },
 
+  handleEntry (e) {
+    e.preventDefault()
+    console.log('Email: ' + this.state.email)
+    this.saveSubmit(this.state.firstName, this.state.lastName, this.state.email, this.state.password, this.state.isAdmin)
+  },
+
+
+
+  // handleSubmit (e) {
+  //   e.preventDefault()
+  //   this.setState({ firstName: this.refs.firstName.value,
+  //                   lastName: this.refs.lastName.value,
+  //                   email: this.refs.email.value,
+  //                   password: this.refs.password.value,
+  //                   isAdmin: this.refs.isAdmin.value
+  //                 })
+  //                 console.log(this.state.firstName)
+
+  // },
 
   render () {
     return (
@@ -52,7 +82,7 @@ const AddUser = React.createClass({
         <div className='container'>
           <div className='row loginrow'>
             <div className='col-xs-4 logincolumn'>
-                <form action={this.handleSubmit} >
+                <form onSubmit={this.handleEntry} >
 
                   <div className="form-group">
                     <label htmlFor="formGroupExampleInput">First Name</label>
@@ -71,12 +101,12 @@ const AddUser = React.createClass({
                   </div>
                   <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" name='password' ref='password' onChange={this.passwordChange} />
+                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" ref='password' onChange={this.passwordChange} />
                   </div>
                   <div className="form-check">
                     <label className="form-check-label">
-                      <input className="form-check-input" type="checkbox" id="blankCheckbox" value={true} aria-label="..." ref='admin' onChange={this.adminChange} />
-                      <small id="emailHelp" className="form-text text-muted">Is this person an admin?</small>
+                      <input className="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." onChange={this.adminChange} />
+                      <small className="form-text text-muted">Is this person an admin?</small>
                     </label>
                   </div>
                   <button type="submit" value='Log In' className="btn btn-primary">Submit</button>
@@ -89,4 +119,4 @@ const AddUser = React.createClass({
   }
 })
 
-export default AddUser
+export default Register
