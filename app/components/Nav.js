@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link, IndexLink } from 'react-router'
+import {Link} from 'react-router'
 
-const Main = React.createClass({
+const Nav = React.createClass({
 
 render () {
   return (
@@ -13,7 +13,7 @@ render () {
 
       <ul className="nav navbar-nav">
         <li className="nav-item active">
-          <IndexLink to='/home' className="nav-link">Home</IndexLink>
+          <Link to='/home' className="nav-link">Home</Link>
         </li>
         <li className="nav-item">
           <Link to='/about' className="nav-link">About</Link>
@@ -38,6 +38,8 @@ render () {
     </div>
   </nav>
 </div>
-)
-}
+    )
+  }
 })
+
+export default Nav
