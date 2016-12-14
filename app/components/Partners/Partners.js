@@ -1,4 +1,5 @@
 import React from 'react'
+import PartnersContent from './Partners_Content'
 
 const Partners = React.createClass({
   render (props) {
@@ -7,8 +8,7 @@ const Partners = React.createClass({
     }
     return (
       <div className="row" style={containerPlacer}>
-        
-        <h1>Partners Main Component</h1>
+        <PartnersContent />
       </div>
     )
   }

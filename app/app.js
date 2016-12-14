@@ -20,18 +20,20 @@ const app = () => {
 
   return (
     <div className='app'>
-      <Nav />
-      <Match exactly pattern='/' component={Main} />
-      <Match pattern='/about' component={About} />
-      <Match pattern='/partners' component={Partners} />
-      <Match pattern='/press' component={Press} />
-      <Match pattern='/contact' component={Contact} />
-      <Match pattern='/sizzle' component={Sizzle} />
-      <Match pattern='/admin' component={Admin} />
-      <Match pattern='/signin' component={SignIn} />
-      <Match pattern='/adduser' component={AddUser} />
+    	<div className='container-fluid'>
+	      <Nav />
+	      <Match exactly pattern='/' component={Main} />
+	      <Match pattern='/about' component={About} />
+	      <Match pattern='/partners' component={Partners} />
+	      <Match pattern='/press' component={Press} />
+	      <Match pattern='/contact' component={Contact} />
+	      <Match pattern='/sizzle' component={Sizzle} />
+	      <Match pattern='/admin' component={Admin} />
+	      <Match pattern='/signin' component={SignIn} />
+	      <Match pattern='/adduser' component={AddUser} />
 
-      <Miss component={fourohfour} />
+	      <Miss component={fourohfour} />
+	    </div>
     </div>
   )
 }
