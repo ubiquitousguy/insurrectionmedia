@@ -45,15 +45,21 @@ const Register = React.createClass({
   },
 
   saveSubmit (firstName, lastName, email, password, isAdmin) {
+       axios.post('/auth/register', { firstName, lastName, email, password, isAdmin })
+    .then(response => {
+      console.log(response, '!!!!!!!!')
+    })
+    .catch(err => {
+      console.log(err, '?????????');
+    })
+    // axios.post('/auth/register', { firstName, lastName, email, password, isAdmin })
+    //   .then((response) => {
+    //     // cookie.save('token', response.data.token, { path: '/' })
+    //     // cookie.save('user', response.data.user, { path: '/' })
+    //     // window.location.href = "http://localhost:3000/"
+    //     console.log(response, 'too far')
 
-    axios.post('/auth/register', { firstName, lastName, email, password, isAdmin })
-      .then((response) => {
-        // cookie.save('token', response.data.token, { path: '/' })
-        // cookie.save('user', response.data.user, { path: '/' })
-        // window.location.href = "http://localhost:3000/"
-        console.log('too far')
-
-      })
+    //   })
   },
 
   handleEntry (e) {

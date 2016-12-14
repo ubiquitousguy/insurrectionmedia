@@ -15,7 +15,7 @@ const cookieParser = require('cookieParser')
 
 const router = require('./router')
 
-const User = require('./app/models/User')
+const User = require('./app/models/Users')
 
 const server = express()
 // class components
@@ -50,6 +50,21 @@ server.use(bodyParser.json({type: 'application/vnd.api+json'}))
 server.use(passport.initialize());
 // server.use(passport.session());
 // server side rendering
+
+router(server)
+
+
+
+
+
+
+
+
+
+
+
+
+
 server.use((req, res) => {
   const context = ReactRouter.createServerRenderContext()
   let body = ReactDOMServer.renderToString(
@@ -57,11 +72,10 @@ server.use((req, res) => {
       React.createElement(app)
     )
   )
+
   res.write(template({body: body}))
   res.end()
 })
-
-router(server)
 
 console.log('listening on ' + port)
 server.listen(port)
