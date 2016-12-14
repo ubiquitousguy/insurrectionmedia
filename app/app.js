@@ -10,8 +10,8 @@ import SignIn from './components/Auth/SignIn'
 import Press from './components/Press/Press'
 import Contact from './components/Contact/Contact'
 import Sizzle from './components/Sizzle/Sizzle'
-import AddUser from './components/Auth/AddUser'
 import Nav from './components/Nav'
+import Register from './components/auth/Register'
 // for people annoyed by es-linting, you can have it automatically fix errors for you
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX
@@ -30,8 +30,7 @@ const app = () => {
 	      <Match pattern='/sizzle' component={Sizzle} />
 	      <Match pattern='/admin' component={Admin} />
 	      <Match pattern='/signin' component={SignIn} />
-	      <Match pattern='/adduser' component={AddUser} />
-
+        <Match pattern='/register' component={Register} />
 	      <Miss component={fourohfour} />
 	    </div>
     </div>
