@@ -11,11 +11,11 @@ import Nav from './Nav'
 
 const Main = (props) => {
     return (
-      <div className="container-fluid">
-
-        <div>
-          {/* ADD VIDEO HERE */}
-        </div>
+      <div className="row">
+        <h1>HOME COMPONENT</h1>
+        {/* <video id="logo-video" autoPlay>
+          <source src="./assets/im_logo.mp4" type="video/mp4"/>
+        </video> */}
       </div>
 
     )
