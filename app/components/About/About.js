@@ -8,10 +8,12 @@ import About_Advisors from './About_Advisors';
 class About extends React.Component{
   render() {
     return (
-      <About_Officers/>
-      <About_Mission />
-      <About_Board />
-      <About_Advisors />
+      <div>
+        <About_Officers/>
+        <About_Mission />
+        <About_Board />
+        <About_Advisors />
+      </div>
     )
 
   }

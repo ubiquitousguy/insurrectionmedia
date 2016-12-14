@@ -1,5 +1,4 @@
 import React from 'react'
-import Home from './Home'
 import Nav from './Nav'
 
 // Import sub-components
