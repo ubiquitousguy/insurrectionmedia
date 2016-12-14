@@ -1,16 +1,13 @@
 import React from 'react'
 
-const Contact = React.createClass({
-  render () {
-    const containerPlacer = {
-      background: "lightblue"
-    }
+const Contact = (props) => {
+
     return (
-      <div className="row" style={containerPlacer}>
+      <div className="row">
         <h1>Contact Main Component</h1>
       </div>
     )
   }
-})
+
 
 export default Contact
