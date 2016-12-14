@@ -5,7 +5,7 @@ const Nav = React.createClass({
 
 render () {
   return (
-<div>
+<div className="container-fluid">
   <nav className="navbar navbar-light bg-faded">
     <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div className="collapse navbar-toggleable-md" id="navbarResponsive">
@@ -32,11 +32,11 @@ render () {
         </li>
       </ul>
       <form className="form-inline float-lg-right">
-        <input className="form-control" type="text" placeholder="User Name" />
+        <input className="form-control" type="text" placeholder="User Name" rec="login"/>
         <button className="btn btn-outline-success" type="submit">Login</button>
       </form>
     </div>
-  </nav>
+  </nav>g
 </div>
     )
   }

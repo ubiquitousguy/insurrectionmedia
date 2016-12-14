@@ -1,8 +1,6 @@
 import React from 'react'
 
-const About = React.createClass({
-  render () {
-
+const About = (props) => {
     return (
       <div className="container" id="about">
         <div className="row">
@@ -31,6 +29,6 @@ const About = React.createClass({
       </div>
     )
   }
-})
+
 
 export default About
