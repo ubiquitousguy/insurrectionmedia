@@ -12,7 +12,7 @@ import ReactPlayer from 'react-player'
 const Main = () => {
     return (
       <div className="row">
-        <h1>HOME COMPONENT</h1>
+        <h1>Main COMPONENT</h1>
         {/* <video id="logo-video" autoPlay muted >
           <source src="../../public/assets/im_logo.mp4" type="video/mp4"/>
         </video> */}
