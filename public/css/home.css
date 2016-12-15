@@ -4,16 +4,12 @@
   float: left;
   top: 0;
   padding: none;
-}
+  position: fixed; }
 
 /*General layout styling for each main component*/
 #about {
-	border: 2px solid black;
-	margin-top: 8em;
-	background-color: yellow;
-}
+  border: 2px solid black;
+  margin: 5em;
+  background-color: black; }
 
-h1 h2 h3 h4 h5 h6 {
-	padding: 40px;
-}
 /*# sourceMappingURL=home.css.map */
