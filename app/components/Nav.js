@@ -12,9 +12,6 @@ render () {
       <a className="navbar-brand" href="#">Insurrection Media</a>
 
       <ul className="nav navbar-nav">
-        <li className="nav-item active">
-          <Link to='/home' className="nav-link">Home</Link>
-        </li>
         <li className="nav-item">
           <Link to='/about' className="nav-link">About</Link>
         </li>
