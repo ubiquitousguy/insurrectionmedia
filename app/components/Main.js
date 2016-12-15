@@ -8,12 +8,12 @@ import Nav from './Nav'
 // import Contact from './Contact/Contact'
 // import Sizzle from './Sizzle/Sizzle'
 
-const Main = (props) => {
+const Main = () => {
     return (
       <div className="row">
         <h1>HOME COMPONENT</h1>
-        {/* <video id="logo-video" autoPlay>
-          <source src="./assets/im_logo.mp4" type="video/mp4"/>
+        {/* <video id="logo-video" autoPlay muted >
+          <source src="../../public/assets/im_logo.mp4" type="video/mp4"/>
         </video> */}
       </div>
 
