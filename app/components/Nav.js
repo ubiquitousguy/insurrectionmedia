@@ -29,11 +29,11 @@ render () {
         </li>
       </ul>
       <form className="form-inline float-lg-right">
-        <input className="form-control" type="text" placeholder="User Name" rec="login"/>
+        <input className="form-control" type="text" placeholder="User Name" ref="login"/>
         <button className="btn btn-outline-success" type="submit">Login</button>
       </form>
     </div>
-  </nav>g
+  </nav>
 </div>
     )
   }

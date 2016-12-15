@@ -10,9 +10,15 @@ const fs = require('fs')
 const port = 3000
 const baseTemplate = fs.readFileSync('./index.html')
 const template = _.template(baseTemplate)
-const App = require('./app/app.js').default
+
+const app = require('./app/app.js').default
+const cookieParser = require('cookieParser')
+
+const router = require('./router')
+
+const User = require('./app/models/Users')
+
 const server = express()
-//const cookieParser = require('cookieParser')
 // class components
 const bodyParser = require('body-parser')
 const logger = require('morgan')
@@ -45,13 +51,29 @@ server.use(bodyParser.json({type: 'application/vnd.api+json'}))
 //server.use(passport.initialize());
 // server.use(passport.session());
 // server side rendering
+
+router(server)
+
+
+
+
+
+
+
+
+
+
+
+
+
 server.use((req, res) => {
   const context = ReactRouter.createServerRenderContext()
   let body = ReactDOMServer.renderToString(
     React.createElement(ServerRouter, {location: req.url, context: context},
-      React.createElement(App)
+      React.createElement(app)
     )
   )
+
   res.write(template({body: body}))
   res.end()
 })

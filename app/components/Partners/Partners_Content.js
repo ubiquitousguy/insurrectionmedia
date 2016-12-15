@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Partners_Contents = React.createClass({
+const Partners_Content = React.createClass({
   render () {
     return (
       <div className="container" id="about">
@@ -35,4 +35,4 @@ const Partners_Contents = React.createClass({
   }
 })
 
-export default Partners_Contents
+export default Partners_Content

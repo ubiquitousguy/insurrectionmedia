@@ -1,35 +1,40 @@
-const passport = require('passport'),
-      User = require('../models/User'),
-      config = require('./secret'),
-      JwtStrategy = require('passport-jwt').Strategy,
-      ExtractJwt = require('passport-jwt').ExtractJwt,
-      LocalStrategy = require('passport-local')
+// const passport = require('passport'),
+//       User = require('../models/User'),
+//       config = require('./sec'),
+//       JwtStrategy = require('passport-jwt').Strategy,
+//       ExtractJwt = require('passport-jwt').ExtractJwt,
+//       LocalStrategy = require('passport-local')
 
-const localOptions = { usernameField: 'email' }
+// const localOptions = { usernameField: 'email' }
 
-const localLogin = new LocalStrategy(localOptions, function(email, password, done) {
-  User.findOne({ email: email }, function(err, user) {
-    if(err) { return done(err) }
-    if(!isMatch) { return done(null, false, { error: "Your login details could not be verified. Please try again." })}
-    user.comparePassword(password, function(err, isMatch) {
-      if (err) { return done(err) }
-      if (!isMatch) { return done(null, false, { error: "Your login details could not be verified. Please try again."})}
-      return done(null, user) 
-    })
-  })
-})
+// const localLogin = new LocalStrategy(localOptions, function(email, password, done) {
+//   User.findOne({ email: email }, function(err, user) {
+//     if(err) { return done(err) }
+//     if(!isMatch) { return done(null, false, { error: "Your login details could not be verified. Please try again." })}
+//     user.comparePassword(password, function(err, isMatch) {
+//       if (err) { return done(err) }
+//       if (!isMatch) { return done(null, false, { error: "Your login details could not be verified. Please try again."})}
+//       return done(null, user) 
+//     })
+//   })
+// })
 
-const jwtLogin = new JwtStrategy(jwtOptions, function(payload, done) {
-  User.findById(payload._id, function(err, user) {
-    if (err) { return done(err, false) }
+// const jwtOptions = {
+//   jwtFromRequest: ExtractJwt.fromAuthHeader(),
+//   secretOrKey: config.secret
+// }
 
-    if (user) {
-      done(null, user)
-    } else {
-      done(null, false)
-    }
-  })
-})
+// const jwtLogin = new JwtStrategy(jwtOptions, function(payload, done) {
+//   User.findById(payload._id, function(err, user) {
+//     if (err) { return done(err, false) }
 
-passport.use(jwtLogin)
-passport.use(localLogin)
+//     if (user) {
+//       done(null, user)
+//     } else {
+//       done(null, false)
+//     }
+//   })
+// })
+
+// passport.use(jwtLogin)
+// passport.use(localLogin)
