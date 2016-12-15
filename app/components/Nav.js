@@ -9,7 +9,7 @@ render () {
   <nav className="navbar navbar-light bg-faded">
     <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div className="collapse navbar-toggleable-md" id="navbarResponsive">
-      <a className="navbar-brand" href="#">Insurrection Media</a>
+      <Link to='/' className="navbar-brand">Insurrection Media</Link>
 
       <ul className="nav navbar-nav">
         <li className="nav-item">
