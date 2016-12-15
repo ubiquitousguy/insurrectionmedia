@@ -6,7 +6,7 @@ const Nav = React.createClass({
 render () {
   return (
 <div className="container-fluid">
-  <nav className="navbar navbar-light bg-faded">
+  <nav className="navbar navbar-fixed-top navbar-dark bg-inverse">
     <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div className="collapse navbar-toggleable-md" id="navbarResponsive">
       <Link to='/' className="navbar-brand">Insurrection Media</Link>
