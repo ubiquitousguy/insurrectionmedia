@@ -3,7 +3,6 @@ import { Match, Miss } from 'react-router'
 import Main from './components/Main'
 import fourohfour from './components/fourohfour'
 import Admin from './components/Admin'
-
 import About from './components/About/About'
 import Partners from './components/Partners/Partners'
 import SignIn from './components/Auth/SignIn'

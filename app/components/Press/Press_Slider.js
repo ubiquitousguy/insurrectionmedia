@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Press_Slider = React.createClass({
+const Press_Slider = () => {
   render () {
     return (
       <div>
@@ -8,6 +8,6 @@ const Press_Slider = React.createClass({
       </div>
     )
   }
-})
+}
 
 export default Press_Slider
