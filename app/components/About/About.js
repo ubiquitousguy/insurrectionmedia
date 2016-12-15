@@ -8,15 +8,11 @@ import About_Advisors from './About_Advisors';
 class About extends React.Component{
   render() {
     return (
-      <div>
-        <About_Officers/>
-        <About_Mission />
-        <About_Board />
-        <About_Advisors />
-      </div>
+      <About_Officers/>
+      <About_Mission />
+      <About_Board />
+      <About_Advisors />
     )
-
   }
-
 }
 export default About
