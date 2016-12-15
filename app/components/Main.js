@@ -10,18 +10,23 @@ import ReactPlayer from 'react-player'
 // import Sizzle from './Sizzle/Sizzle'
 
 const Main = () => {
-    return (
-      <div className="row">
-        <h1>Main COMPONENT</h1>
-        {/* <video id="logo-video" autoPlay muted >
-          <source src="../../public/assets/im_logo.mp4" type="video/mp4"/>
-        </video> */}
-        <ReactPlayer width="auto" height="100%" url="http://localhost:3000/public/assets/im_logo2.mp4" playing />
-
-      </div>
-
-    )
+  const backColor = {
+    background: "black",
+    height: "auto"
   }
+  return (
+    <div className="row" style={backColor}>
+      <h1>Main COMPONENT</h1>
+      {/* <video id="logo-video" autoPlay muted >
+        <source src="http://localhost:3000/public/assets/im_logo2.mp4" type="video/mp4"/>
+      </video> */}
+      <ReactPlayer width="auto" height="auto"
+        url="http://localhost:3000/public/assets/im_logo2.mp4" playing mute />
+
+    </div>
+
+  )
+}
 
 
 export default Main
