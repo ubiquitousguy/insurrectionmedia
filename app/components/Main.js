@@ -16,7 +16,7 @@ const Main = () => {
         {/* <video id="logo-video" autoPlay muted >
           <source src="../../public/assets/im_logo.mp4" type="video/mp4"/>
         </video> */}
-        <ReactPlayer url="http://localhost:3000/public/assets/im_logo.mp4" playing />
+        <ReactPlayer width="auto" height="100%" url="http://localhost:3000/public/assets/im_logo2.mp4" playing />
 
       </div>
 
