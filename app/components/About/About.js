@@ -14,9 +14,8 @@ class About extends React.Component{
         <About_Board />
         <About_Advisors />
       </div>
+
     )
-
   }
-
 }
 export default About
