@@ -2,8 +2,8 @@
 
 import React from 'react'
 
-const Press = React.createClass({
-  render () {
+const Press = () => {
+
     const containerPlacer = {
       background: "red"
     }
@@ -13,6 +13,6 @@ const Press = React.createClass({
       </div>
     )
   }
-})
+
 
 export default Press
