@@ -8,14 +8,15 @@ import About_Advisors from './About_Advisors';
 class About extends React.Component{
   render() {
     return (
-      <div>
-        <About_Officers/>
-        <About_Mission />
-        <About_Board />
-        <About_Advisors />
-      </div>
+      <div className="container-fluid">
 
+        <About_Mission />
+        <About_Officers />
+        <About_Board />
+      </div>
     )
   }
 }
 export default About
+
+
