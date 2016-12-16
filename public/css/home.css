@@ -1,3 +1,9 @@
+@font-face {
+  font-family: abeat;
+  src: url(../assets/fonts/abeat.otf); }
+body {
+  font-family: abeat; }
+
 #logo-video {
   height: 100%;
   width: 100%;
@@ -10,7 +16,26 @@
 #about {
   border: 2px solid black;
   margin: 5em;
-  background-color: black; }
+  background-color: black;
+  text-align: center; }
+
+.bio {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 0 5px;
+  height: 150px;
+  text-align: center;
+  overflow: auto; }
+
+.bio::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 20px;
+  background: transparent; }
+
+.bio::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+  opacity: 0.5; }
 
 .nav-style {
   background: black; }
@@ -27,7 +52,6 @@
   font-family: 'Keania One'; }
 
 .navbar {
-<<<<<<< HEAD
   background: transparent;
   padding: 2em; }
 
@@ -41,10 +65,5 @@
 
 .partner-img {
   padding-bottom: 1em; }
-=======
-  background: transparent; }
-
-
->>>>>>> dca426d822df1628247bea62fedda5cdc85953e8
 
 /*# sourceMappingURL=home.css.map */
