@@ -23,9 +23,11 @@
   padding-right: 1.5em; }
 
 .nav-link {
-  font: white; }
+  font: white;
+  font-family: 'Keania One'; }
 
 .navbar {
+<<<<<<< HEAD
   background: transparent;
   padding: 2em; }
 
@@ -39,5 +41,10 @@
 
 .partner-img {
   padding-bottom: 1em; }
+=======
+  background: transparent; }
+
+
+>>>>>>> dca426d822df1628247bea62fedda5cdc85953e8
 
 /*# sourceMappingURL=home.css.map */

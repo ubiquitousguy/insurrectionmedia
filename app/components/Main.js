@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
-import ReactPlayer from 'react-player'
+import ReactPlayer, {volume} from 'react-player'
 
 // Import sub-components
 // import About from './About/About'
