@@ -1,8 +1,9 @@
 body, html {
   height: 100%;
-  background-color: black; }
+  background-color: black;
+  padding-top: 70px; }
 
-#navBar {
+navbar navbar-fixed-top {
   background-color: transparent; }
 
 .nav-item {

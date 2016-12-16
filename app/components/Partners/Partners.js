@@ -2,9 +2,8 @@ import React from 'react'
 import PartnersContent from './Partners_Content'
 
 const Partners = () => {
-
     return (
-      <div className="row" style={containerPlacer}>
+      <div className="row">
         <PartnersContent />
       </div>
     )
