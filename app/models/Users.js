@@ -19,7 +19,8 @@ var UserSchema = new Schema({
 
   email: {
     type: String,
-    match: [/.+\@.+\..+/, 'Please enter a valid e-mail address']
+    match: [/.+\@.+\..+/, 'Please enter a valid e-mail address'],
+    index: { unique: true }
   },
 
   password: {
@@ -61,14 +62,14 @@ UserSchema.pre('save', function(next) {
   })
 })
 
-UserSchema.methods.comparePassword = function(candidatePassword, cb) {  
-  bcrypt.compare(candidatePassword, this.password, function(err, isMatch) {
-    if (err) { return cb(err) }
-    cb(null, isMatch)
-  })
-}
+// UserSchema.methods.comparePassword = function(attemptedPassword, existingPassword, callback) {
+//   bcrypt.compare(attemptedPassword, existingPassword, function(err, isMatch) {
+//     console.log("attempted: " + attemptedPassword)
+//     console.log("attempte2: " + existingPassword)
+//     callback(isMatch);
+//   })
+// }
 
 
-var User = mongoose.model('User', UserSchema)
 
-module.exports = User
+module.exports = mongoose.model('User', UserSchema)

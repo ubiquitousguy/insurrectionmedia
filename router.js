@@ -1,21 +1,11 @@
 const Promise = require('bluebird')
 const express = require('express')
 const User = require('./app/models/Users')
-      // passportService = require('./app/utils/passport'),
-const passport = require('passport')
-const passportService = require('./config/passport')
 
 const jwt = require('jsonwebtoken'),
       crypto = require('crypto'),
       config = require('./config/secret')
-
-
-const requireAuth = passport.authenticate('jwt', { session: false })  
-const requireLogin = passport.authenticate('local', { session: false })
-
-// Constants for role types
-const REQUIRE_ADMIN = "Admin",  
-      REQUIRE_CLIENT = "Client"
+const compareSec = require('./encryption').compareSec
 
 
 function generateToken(user) {  
@@ -81,9 +71,31 @@ module.exports = function(server) {
     })
   })
 
-  server.post('/auth/signin', passport.authenticate('local'), (req, res) => {
-    res.redirect('/')
+server.post('/auth/signin', (req, res) => {
+
+  const email = req.body.email
+  const password = req.body.password
+  const isAdmin = req.body.isAdmin
+
+  // let user = new User({
+  // email: email,
+  // password: password,
+  // isAdmin: isAdmin
+  // })
+
+  User.findOne({ email: email }, function(err, existingUser) {
+    if (err) { return next(err) }
+    if (!existingUser) {
+      return res.status(422).send({ error: 'User Not Found' })
+    }
+    if (existingUser) {
+      compareSec(password, existingUser.password, function(matchy) {
+        console.log(matchy)
+      })
+    }
   })
+})
+
   server.get('/logout', (req, res) => {
     req.logout()
     res.redirect('/')
