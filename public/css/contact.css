@@ -1,0 +1,15 @@
+#contact {
+  background: #fff; }
+
+#contact form {
+  margin-top: 40px; }
+
+.contact form input,
+.contact form textarea {
+  margin-top: 20px; }
+
+.contact.row {
+  position: fixed;
+ }
+
+/*# sourceMappingURL=contact.css.map */
