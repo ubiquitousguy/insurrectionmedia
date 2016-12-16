@@ -1,10 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Link} from 'react-router'
 
-const Nav = React.createClass({
-
-render () {
-
+class Nav extends Component {
+  render () {
   const photoPlacer = {
     width: "200px",
     height: "24px"
@@ -45,6 +43,6 @@ render () {
 </div>
     )
   }
-})
+}
 
 export default Nav
