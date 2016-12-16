@@ -48,15 +48,15 @@ const Register = React.createClass({
        axios.post('/auth/register', { firstName, lastName, email, password, isAdmin })
     .then(response => {
       console.log(response, '!!!!!!!!')
+        cookie.save('token', response.data.token, { path: '/' })
+        cookie.save('user', response.data.user, { path: '/' })
+        window.location.href = "http://localhost:3000/"
     })
     .catch(err => {
       console.log(err, '?????????');
     })
     // axios.post('/auth/register', { firstName, lastName, email, password, isAdmin })
     //   .then((response) => {
-    //     // cookie.save('token', response.data.token, { path: '/' })
-    //     // cookie.save('user', response.data.user, { path: '/' })
-    //     // window.location.href = "http://localhost:3000/"
     //     console.log(response, 'too far')
 
     //   })
