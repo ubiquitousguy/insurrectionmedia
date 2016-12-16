@@ -3,10 +3,11 @@ body, html {
   background-color: black;
   padding-top: 70px; }
 
-navbar navbar-fixed-top {
+.navbar navbar-fixed-top {
   background-color: transparent; }
 
 .nav-item {
-  color: white; }
+  color: white;
+  font-family: 'Keania One'; }
 
 /*# sourceMappingURL=style.css.map */
