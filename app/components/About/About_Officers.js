@@ -15,7 +15,7 @@ const About_Officers = (props) => {
         <div className="row">
           <div className="col-sm-4">
             <img style={photoPlacer} className="mx-auto img-fluid" src="public/assets/Kiliaen.jpg" />
-            <h2 className="text-sm-center">Kiliaen Van Rensselaer, Founder & CEO</h2>
+            <h2 className="text-sm-center testing">Kiliaen Van Rensselaer, Founder & CEO</h2>
             <p>Before founding Insurrection, KVR was SVP, Multi-Platform Programming at Fox Television Group.   Under his leadership at Fox, seven of his digital incubations went on to TV/video series orders on networks such as FOX Broadcasting, TBS, Comedy Central, Lifetime and OTT platforms including Hulu, Fullscreen and Conde Nast.  KVR spent five years at News Corp/Fox as a digital disruptor after having sold a software services and e-reading company he co-founded to News Corp.  Prior to that, he held senior level positions including Executive Director of National Marketing at AT&T Mobility, VP, Marketing at Tickets.com, and Brand Manager at Colgate-Palmolive and The H.J. Heinz Company.  KVR has a BA with honors in History from Trinity College.
             </p>
           </div>
