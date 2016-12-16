@@ -8,8 +8,7 @@ const Contact_General = React.createClass({
             <div className="container">
               <div className="col-md-12">
 
-
-                <h2 className="title">Contact me</h2>
+                {/* <h2 className="title">Contact me</h2> */}
 
                 <div className="row">
 
@@ -22,7 +21,7 @@ const Contact_General = React.createClass({
 
                       <div className="controls">
 
-                        <div className="row">
+                        <div className="row contact">
                           <div className="col-md-6">
                             <input type="text" name="name" className="form-control" placeholder="Your firstname *" required="/required"/>
                           </div>
