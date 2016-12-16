@@ -8,8 +8,6 @@ const Contact_General = React.createClass({
             <div className="container">
               <div className="col-md-12">
 
-                {/* <h2 className="title">Contact me</h2> */}
-
                 <div className="row">
 
                   <div className="col-md-8 col-md-offset-2">
