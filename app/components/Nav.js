@@ -13,8 +13,7 @@ render () {
 <div className="container">
   <nav className="navbar navbar-fixed-top" id="navBar">
     <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div className="collapse navbar-toggleable-md" id="navbarResponsive">
-      
+    <div className="collapse navbar-toggleable-sm" id="navbarResponsive">
       <ul className="nav navbar-nav">
         <li className="nav-item">
           <Link to='/about' className="nav-link">About</Link>
@@ -32,9 +31,11 @@ render () {
           <Link to='/sizzle' className="nav-link">Sizzles</Link>
         </li>
       </ul>
-      <Link to='/' className="nav-link">
-        <img style={photoPlacer} src="public/assets/im.png" />
-      </Link>
+      <span id="testing">
+        <Link to='/' className="nav-link">
+          <img style={photoPlacer} src="public/assets/im.png" />
+        </Link>
+      </span>
     
       <form className="form-inline float-lg-right">
         <input className="form-control" type="text" placeholder="User Name" ref="login"/>

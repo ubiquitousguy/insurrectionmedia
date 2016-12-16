@@ -23,12 +23,18 @@
 
 /* Nav bar styling */
 .nav-item {
-  padding-left: 2em; }
+  padding-right: 1.5em; }
 
 .nav-link {
   font: white; }
 
 .navbar {
   background: transparent; }
+
+.navbar-brand {
+  margin: 0 auto; }
+
+#testing {
+  margin: 0 auto; }
 
 /*# sourceMappingURL=home.css.map */
