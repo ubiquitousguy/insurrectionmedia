@@ -16,7 +16,6 @@ const Main = () => {
   }
   return (
     <div className="row" style={backColor}>
-      <h1>Main COMPONENT</h1>
       {/* <video id="logo-video" autoPlay muted >
         <source src="http://localhost:3000/public/assets/im_logo2.mp4" type="video/mp4"/>
       </video> */}
