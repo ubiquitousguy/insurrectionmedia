@@ -4,6 +4,7 @@ const Contact_General = React.createClass({
   render () {
     return (
       <div id="contact">
+        <div class="col-lg-1 col-offset-6 centered">
           <div className="section contact" id="contact" data-animate="bounceIn">
             <div className="container">
               <div className="col-md-12">
@@ -48,6 +49,7 @@ const Contact_General = React.createClass({
 
               </div>
             </div>
+          </div>
           </div>
         </div>
     )
