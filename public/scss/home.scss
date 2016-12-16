@@ -1,3 +1,12 @@
+@font-face {
+   font-family: abeat;
+   src: url(../assets/fonts/abeat.otf);
+}
+
+body {
+	font-family: abeat;
+}
+
 #logo-video{
 
 height: 100%;
@@ -14,6 +23,28 @@ position: fixed; // optional depending on what you want
 	border: 2px solid black;
 	margin: 5em;
 	background-color: black;
+	text-align: center;
+}
+
+.bio {
+	font-size: 14px;
+	margin-top: 5px;
+	padding: 0 5px;
+	height: 150px;
+	text-align: center;
+	overflow: auto;
+}
+
+.bio::-webkit-scrollbar {
+	width: 4px;
+	border-radius: 20px;
+	background: transparent;
+}
+
+.bio::-webkit-scrollbar-thumb {
+	background-color: grey;
+	border-radius: 20px;
+	opacity: 0.5;
 }
 
 .nav-style {
@@ -29,7 +60,7 @@ position: fixed; // optional depending on what you want
 }
 .nav-link {
 	font: white;
-  font-family: 'Keania One';
+  	font-family: 'Keania One';
 }
 .navbar {
 	background: transparent;
