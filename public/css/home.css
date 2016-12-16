@@ -31,4 +31,10 @@
 .navbar {
   background: transparent; }
 
+.contact.row {
+  position: fixed;
+  margin-left: 170px;
+  margin-right: 265px;
+  top: 250px;
+}
 /*# sourceMappingURL=home.css.map */
