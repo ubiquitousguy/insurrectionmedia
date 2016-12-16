@@ -11,7 +11,7 @@ render () {
   }
   return (
 <div className="container">
-  <nav className="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <nav className="navbar navbar-fixed-top" id="navBar">
     <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div className="collapse navbar-toggleable-md" id="navbarResponsive">
       
