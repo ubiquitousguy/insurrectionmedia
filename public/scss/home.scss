@@ -18,13 +18,8 @@ position: fixed; // optional depending on what you want
 
 .nav-style {
 	background: black;
-
-
 }
 .nav-link {
-	color: white;
-}
-.testing {
 	color: white;
 }
 
@@ -37,10 +32,18 @@ position: fixed; // optional depending on what you want
 }
 .navbar {
 	background: transparent;
+	padding: 2em;
 }
-.navbar-brand {
-	margin: 0 auto;
+.icon-bar {
+	color: white;
+	background: black;
 }
-#testing {
-	margin: 0 auto;
+
+/* Partners */
+.partner-content {
+	padding-bottom: 5em;
+}
+
+.partner-img {
+	padding-bottom: 1em;
 }

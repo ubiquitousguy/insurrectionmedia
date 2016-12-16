@@ -9,8 +9,13 @@ class Nav extends Component {
   }
   return (
 <div className="container">
-  <nav className="navbar navbar-fixed-top" id="navBar">
-    <button className="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+  <nav className="navbar navbar-fixed-top navbar-default" id="navBar">
+    <button className="navbar-toggler hidden-lg-up" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
     <div className="collapse navbar-toggleable-md" id="navbarResponsive">
 
@@ -37,13 +42,10 @@ class Nav extends Component {
           <img style={photoPlacer} src="public/assets/im.png" />
         </Link>
       </span>
-    
 
-      <form className="form-inline float-lg-right">
-        <input className="form-control" type="text" placeholder="User Name" ref="login"/>
-        <button className="btn btn-outline-success" type="submit">Login</button>
-      </form>
+
     </div>
+ 
   </nav>
 </div>
     )
