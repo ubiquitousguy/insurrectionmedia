@@ -10,12 +10,9 @@ import ReactPlayer from 'react-player'
 // import Sizzle from './Sizzle/Sizzle'
 
 const Main = () => {
-  const backColor = {
-    background: "black",
-    height: "auto"
-  }
+
   return (
-    <div className="row" style={backColor}>
+    <div className="row">
       {/* <video id="logo-video" autoPlay muted >
         <source src="http://localhost:3000/public/assets/im_logo2.mp4" type="video/mp4"/>
       </video> */}
