@@ -18,15 +18,17 @@ position: fixed; // optional depending on what you want
 
 .nav-style {
 	background: black;
-
-
 }
 .nav-link {
 	color: white;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> dca426d822df1628247bea62fedda5cdc85953e8
 /* Nav bar styling */
 .nav-item {
-	padding-left: 2em;
+	padding-right: 1.5em;
 }
 .nav-link {
 	font: white;
@@ -34,10 +36,19 @@ position: fixed; // optional depending on what you want
 }
 .navbar {
 	background: transparent;
+	padding: 2em;
+}
+.icon-bar {
+	color: white;
+	background: black;
 }
 
-.contact.row {
-	position: absolute;
-	top: 100px;
-	left:100px;
+/* Partners */
+.partner-content {
+	padding-bottom: 5em;
 }
+
+.partner-img {
+	padding-bottom: 1em;
+}
+

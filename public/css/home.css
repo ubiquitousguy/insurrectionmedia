@@ -20,15 +20,31 @@
 
 /* Nav bar styling */
 .nav-item {
-  padding-left: 2em; }
+  padding-right: 1.5em; }
 
 .nav-link {
   font: white;
   font-family: 'Keania One'; }
 
 .navbar {
+<<<<<<< HEAD
+  background: transparent;
+  padding: 2em; }
+
+.icon-bar {
+  color: white;
+  background: black; }
+
+/* Partners */
+.partner-content {
+  padding-bottom: 5em; }
+
+.partner-img {
+  padding-bottom: 1em; }
+=======
   background: transparent; }
 
 
+>>>>>>> dca426d822df1628247bea62fedda5cdc85953e8
 
 /*# sourceMappingURL=home.css.map */
