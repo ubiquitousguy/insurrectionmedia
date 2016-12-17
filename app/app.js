@@ -35,7 +35,7 @@ const app = () => {
 
 	      <Miss component={fourohfour} />
         <Footer />
-        
+
 	    </div>
     </div>
 
