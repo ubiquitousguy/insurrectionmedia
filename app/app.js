@@ -16,19 +16,7 @@ import Footer from './components/Footer'
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX
 
-const routes = [
-  { pattern: '/',
-    component: Nav,
-    routes: [
-      { pattern: '/Main',
-        component: Bus
-      },
-      { pattern: '/tacos/cart',
-        component: Cart
-      }
-    ]
-  }
-]
+
 
 const app = () => {
 
