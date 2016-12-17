@@ -4,9 +4,10 @@ import React from 'react'
 
 const Press = () => {
     return (
-      <div className="row">
+      <div className="container-fluid">
+        <h1 id="sectionHeading">Press</h1>
       </div>
-    )
+        )
   }
 
 

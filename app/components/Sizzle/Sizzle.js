@@ -5,6 +5,7 @@ import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay
 const Sizzle = () => {
     return (
       <div className="container-fluid" id="sizzleBody">
+        <h1 id="sectionHeading">2016 Q4 Sizzle</h1>
         <div className="row">
           <div id="sizzleTitle">
             <h1>2017 Sizzle Reel</h1>

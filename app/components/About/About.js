@@ -3,13 +3,13 @@ import React from 'react';
 import About_Officers from './About_Officers';
 import About_Mission from './About_Mission';
 import About_Board from './About_Board';
-import About_Advisors from './About_Advisors';
+// import About_Advisors from './About_Advisors';
 
 class About extends React.Component{
   render() {
     return (
       <div className="container-fluid">
-
+        <h1 id="sectionHeading">Insurrection Media</h1>
         <About_Mission />
         <About_Officers />
         <About_Board />
@@ -18,5 +18,3 @@ class About extends React.Component{
   }
 }
 export default About
-
-
