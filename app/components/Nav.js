@@ -48,6 +48,9 @@ class Nav extends Component {
           <li className="nav-item">
             <Link to='/contact' className="nav-link mx-auto swing">Contact</Link>
           </li>
+          <li className="nav-item">
+            <Link to='/register' className="nav-link mx-auto swing">Register</Link>
+          </li>
         </ul>
       </div>
 
