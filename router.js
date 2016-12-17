@@ -2,10 +2,10 @@ const Promise = require('bluebird')
 const express = require('express')
 const User = require('./app/models/Users')
 
-const jwt = require('jsonwebtoken'),
-      crypto = require('crypto'),
-      config = require('./config/secret')
-const compareSec = require('./encryption').compareSec
+// const jwt = require('jsonwebtoken'),
+      // crypto = require('crypto'),
+      // config = require('./config/secret')
+// const compareSec = require('./encryption').compareSec
 
 
 function generateToken(user) {  
