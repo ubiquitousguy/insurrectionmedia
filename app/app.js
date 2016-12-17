@@ -21,7 +21,8 @@ const app = () => {
   return (
     <div className='app' id='Site'>
     	<div className='container-fluid'>
-	      <Nav />
+        <Nav />
+
 	      <Match exactly pattern='/' component={Main} />
 	      <Match pattern='/about' component={About} />
 	      <Match pattern='/partners' component={Partners} />
@@ -31,11 +32,11 @@ const app = () => {
 	      <Match pattern='/admin' component={Admin} />
 	      <Match pattern='/signin' component={SignIn} />
         <Match pattern='/register' component={Register} />
-        <Footer />
-	      <Miss component={fourohfour} />
 
+	      <Miss component={fourohfour} />
+        <Footer />
+        
 	    </div>
-      
     </div>
 
   )
