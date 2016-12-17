@@ -4,9 +4,12 @@ import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay
 
 const Sizzle_Player = () => {
   return(
-    <div>
-      <ReactPlayer url="https://vimeo.com/181869367"  />
-    </div>
+  		<div className="col-xs-8">
+	      	<ReactPlayer url="https://vimeo.com/181869367"  />
+	    </div>
+	
+
+
 )
 }
 
