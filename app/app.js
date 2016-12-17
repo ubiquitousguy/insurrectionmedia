@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact'
 import Sizzle from './components/Sizzle/Sizzle'
 import Nav from './components/Nav'
 import Register from './components/auth/Register'
+import Footer from './components/Footer'
 // for people annoyed by es-linting, you can have it automatically fix errors for you
 // just run: npm run lint -s -- --fix
 // semi-colons not necessary or recommended for JSX
@@ -18,7 +19,7 @@ import Register from './components/auth/Register'
 const app = () => {
 
   return (
-    <div className='app'>
+    <div className='app' id='Site'>
     	<div className='container-fluid'>
 	      <Nav />
 	      <Match exactly pattern='/' component={Main} />
@@ -30,11 +31,13 @@ const app = () => {
 	      <Match pattern='/admin' component={Admin} />
 	      <Match pattern='/signin' component={SignIn} />
         <Match pattern='/register' component={Register} />
+        <Footer />
 	      <Miss component={fourohfour} />
 
 	    </div>
       
     </div>
+
   )
 }
 
