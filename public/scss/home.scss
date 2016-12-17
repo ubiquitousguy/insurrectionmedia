@@ -63,7 +63,6 @@ position: fixed; // optional depending on what you want
   	font-family: 'Keania One';
 }
 .navbar {
-	background: transparent;
 	padding: 2em;
 }
 .icon-bar {
@@ -78,5 +77,14 @@ position: fixed; // optional depending on what you want
 
 .partner-img {
 	padding-bottom: 1em;
+}
+
+.nav-link {
+	font-size: 20px;
+}
+.nav-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 

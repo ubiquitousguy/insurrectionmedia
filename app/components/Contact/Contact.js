@@ -6,6 +6,7 @@ class Contact extends Component {
   render() {
     return (
       <div className = "container-fluid">
+        <h1 id="sectionHeading">Contact Us</h1>
         <Contact_Gen />
       </div>
     )

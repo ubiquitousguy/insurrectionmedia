@@ -31,7 +31,9 @@ const app = () => {
 	      <Match pattern='/signin' component={SignIn} />
         <Match pattern='/register' component={Register} />
 	      <Miss component={fourohfour} />
+
 	    </div>
+      
     </div>
   )
 }
