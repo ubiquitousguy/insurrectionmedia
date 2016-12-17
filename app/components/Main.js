@@ -9,20 +9,19 @@ import ReactPlayer, {volume} from 'react-player'
 // import Contact from './Contact/Contact'
 // import Sizzle from './Sizzle/Sizzle'
 
-const Main = () => {
-
-  return (
-    <div className="row">
-      {/* <video id="logo-video" autoPlay muted >
-        <source src="http://localhost:3000/public/assets/im_logo2.mp4" type="video/mp4"/>
-      </video> */}
-      {/*<ReactPlayer width="auto" height="auto" volume="0"
-        url="http://localhost:3000/public/assets/im_logo2.mp4" playing /> */}
-
-    </div>
-
-  )
-}
+const Main = React.createClass({
+  render() {
+    return (
+      <div className="row">     
+        <video id="logo-video" autoPlay muted >
+          <source src="http://localhost:3000/public/assets/im_logo2.mp4" type="video/mp4"/>
+        </video>
+        <ReactPlayer width="auto" height="auto" volume="0"
+          url="http://localhost:3000/public/assets/im_logo2.mp4" playing /> 
+      </div>
+    )
+  }
+})
 
 
 export default Main

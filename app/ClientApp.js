@@ -1,8 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter } from 'react-router'
-import App from './App'
 
-render(<BrowserRouter><App /></BrowserRouter>,
+import Entry from './Entry'
+
+
+render(<BrowserRouter><Entry /></BrowserRouter>,
   document.getElementById('app')
 )
