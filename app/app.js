@@ -33,7 +33,9 @@ const app = () => {
         <Match pattern='/register' component={Register} />
         <Footer />
 	      <Miss component={fourohfour} />
+
 	    </div>
+      
     </div>
 
   )
