@@ -3,15 +3,16 @@ import React from 'react'
 const Contact_General = React.createClass({
   render () {
     return (
+      <div className = "container-fluid">
       <div id="contact">
         <div class="col-lg-1 col-offset-6 centered">
           <div className="section contact" id="contact" data-animate="bounceIn">
             <div className="container">
-              <div className="col-md-12">
+              {/* <div className="col-md-12"> */}
 
                 <div className="row">
 
-                  <div className="col-md-8 col-md-offset-2">
+                  {/* <div className="col-md-8 col-md-offset-2"> */}
                     <form id="contact-form" method="post" action="contact.php">
 
                       <div className="messages">
@@ -43,15 +44,16 @@ const Contact_General = React.createClass({
                       </div>
 
                     </form>
-                  </div>
+                  {/* </div> */}
 
                 </div>
 
-              </div>
+              {/* </div> */}
             </div>
           </div>
           </div>
         </div>
+      </div>
     )
   }
 })

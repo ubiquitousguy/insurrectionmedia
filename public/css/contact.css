@@ -1,15 +1,22 @@
 #contact {
-  background: #fff; }
+  background: #fff;
+  margin-left: 175px;
+  margin-right: 175px;
+  margin-top: 150px;}
 
 #contact form {
-  margin-top: 40px; }
+  margin-top: 10px;
+  margin: auto; }
 
 .contact form input,
 .contact form textarea {
-  margin-top: 20px; }
+  margin-top: 10px; }
 
-.contact.row {
-  position: fixed;
- }
+/*.contact.row {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 120px;
+ }*/
 
 /*# sourceMappingURL=contact.css.map */
