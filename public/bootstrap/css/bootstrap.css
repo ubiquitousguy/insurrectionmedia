@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #C0C0C0;
 }
 
 abbr[title],
@@ -528,18 +529,21 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  /*font-family: inherit;*/
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  font-style: new times roman;
 }
 
 h1, .h1 {
   font-size: 2.5rem;
+    color: #C0C0C0;
 }
 
 h2, .h2 {
   font-size: 2rem;
+    color: #C0C0C0;
 }
 
 h3, .h3 {

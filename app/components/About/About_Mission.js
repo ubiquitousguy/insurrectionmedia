@@ -5,8 +5,8 @@ const About_Mission = React.createClass({
     return (
       <div id="about">
         <div>
-          <h1>Insurrection Media is an independent talent friendly digital TV studio developing and producing high quality scripted shows for over-the-top video platforms as well as broadcast and cable networks internationally. The company is headquartered in Los Angeles.
-          </h1>
+          <h2>Insurrection Media is an independent talent friendly digital TV studio developing and producing high quality scripted shows for over-the-top video platforms as well as broadcast and cable networks internationally. The company is headquartered in Los Angeles.
+          </h2>
         </div>
       </div>
     )

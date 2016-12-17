@@ -8,7 +8,7 @@ const About_Officers = (props) => {
       <div id="about">
         <div className="row">
           <div className="col-sm-12">
-            <h1 className="text-sm-center">Insurrection Media</h1>
+            <h1 className="text-sm-center">Officers</h1>
           </div>
         </div>
         <div className="row">
