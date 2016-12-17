@@ -5,6 +5,7 @@ import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay
 const Sizzle = () => {
     return (
       <div className="container-fluid" id="sizzleBody">
+        <h1 id="sectionHeading">2016 Q4 Sizzle</h1>
         <div className="row">
           <ReactPlayer url="https://vimeo.com/181869367" playing />
           {/*<Video controls autoPlay loop muted poster="http://sourceposter.jpg">
