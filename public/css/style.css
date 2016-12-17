@@ -17,4 +17,11 @@ li.nav-item {
   background-image: url("../assets/im.png");
   background-size: 300px 40px; }
 
+.footer {
+  color: white;
+  height: 3em;
+  background-color: black;
+  text-align: center;
+  padding-top: 1em; }
+
 /*# sourceMappingURL=style.css.map */
