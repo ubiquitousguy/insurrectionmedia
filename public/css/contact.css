@@ -1,22 +1,21 @@
 #contact {
-  background: black;
-  margin-left: 175px;
-  margin-right: 175px;
-  margin-top: 150px;}
+  background: #000000; }
 
 #contact form {
-  margin-top: 10px;
-  margin: auto; }
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px; }
 
 .contact form input,
 .contact form textarea {
-  margin-top: 10px; }
+  margin-top: 20px; }
 
-/*.contact.row {
-  position: absolute;
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 120px;
- }*/
+#Site {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column; }
+
+.Site-content {
+  flex: 1; }
 
 /*# sourceMappingURL=contact.css.map */
