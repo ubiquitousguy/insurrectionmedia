@@ -11,8 +11,8 @@ class Nav extends Component {
 <div className="container">
 
   <nav className="navbar navbar-fixed-top" id="navBar">
-    <button className="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Suhdude
+    <button className="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
     </button>
     <div className="container-fluid collapse navbar-toggleable-sm" id="navbarResponsive">
 
@@ -52,7 +52,7 @@ class Nav extends Component {
       </div>
 
     </div>
- 
+
   </nav>
 </div>
     )
